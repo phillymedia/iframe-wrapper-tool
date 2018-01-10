@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,900" rel="stylesheet">
+<title>
+PMN: Iframe wrapper tool
+</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+<div id="wrapper">
+<div class="maxwidth" id="heading">
+<h1>PMN: Iframe wrapper tool</h1>
+<p class="headingText">Use this tool to generate iframe embed code for graphics in Dixon.<br><em style="color:gray">For help or to report bugs, contact <a href="mailto:spotts@phillynews.com?Subject=Gallery%20Tool" target="_top">Garland Potts</a>.</em></p>
+</div>
+<div class="step" id="step-0">
+<div class="instruc">Select type of embed content:</div>
+<select id="typeSelect">
+<option label="Select one"></option>
+<option value="arcgis" selected="selected">ArcGIS map</option>
+</select>
+</div>
+<div class="step" id="step-1">
+<div class="getInfo">
+<div class="instruc">Fill out all the fields below:</div>
+<form class="infoform">
+Headline:
+<input type="text" class="inputform" name="headline" placeholder="This is the headline">
+<br>Chatter:
+<textarea type="text" class="inputform" name="chatter" placeholder="Chatter goes here" rows="3"></textarea>
+<br>Legend image url:
+<input type="text" class="inputform" name="imageurl" placeholder="http://media.philly.com/images/mini_casino_legend.png">
+<br>ArcGIS map id:
+<input type="text" class="inputform" name="webmap" placeholder="2c012c7bf06c4925b7bf29e1723ea1f5">
+<br>
+Iframe width:
+<input type="text" class="inputform smallinput" name="width" placeholder="725">
+Iframe height:
+<input type="text" class="inputform smallinput" name="height" placeholder="530">
+<br>Source:
+<input type="text" class="inputform" name="source" placeholder="Source goes here">
+<br>Credit:
+<input type="text" class="inputform" name="credit" placeholder="Staff Graphic"><br>
+</form>
+<button id="enterData" class="button">Generate html</button>
+</div>
+</div>
+<div class="step" id="step-2">
+<div class="instruc">Paste following code into Dixon:</div>
+<div class="outputText">
+<textarea name="output" id="output" rows="12"></textarea>
+</div>
+<div class="instruc preview">Preview iframe:</div>
+<div class="templateText">
+</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
