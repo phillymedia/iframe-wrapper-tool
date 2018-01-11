@@ -22,6 +22,12 @@ PMN: Iframe wrapper tool
 <option label="Select one"></option>
 <option value="arcgis" selected="selected">ArcGIS map</option>
 </select>
+<form class="sizeOptions">
+<input type="radio" id="fullwidth" name="iframesize" value="fullwidth" checked="checked">
+<label for="fullwidth">Full width</label>
+<input type="radio" id="floatleft" name="iframesize" value="floatleft">
+<label for="floatleft">50% Float left</label>
+</form>
 </div>
 <div class="step" id="step-1">
 <div class="getInfo">
@@ -31,14 +37,12 @@ Headline:
 <input type="text" class="inputform" name="headline" placeholder="This is the headline">
 <br>Chatter:
 <textarea type="text" class="inputform" name="chatter" placeholder="Chatter goes here" rows="3"></textarea>
-<br>Legend image url:
+<br>Legend image url <small>(Can leave blank)</small>:
 <input type="text" class="inputform" name="imageurl" placeholder="http://media.philly.com/images/mini_casino_legend.png">
 <br>ArcGIS map id:
 <input type="text" class="inputform" name="webmap" placeholder="2c012c7bf06c4925b7bf29e1723ea1f5">
-<br>
-Iframe width:
-<input type="text" class="inputform smallinput" name="width" placeholder="725">
-Iframe height:
+<br>Map width:
+<input type="text" class="inputform smallinput" name="width" placeholder="725"> Map height:
 <input type="text" class="inputform smallinput" name="height" placeholder="530">
 <br>Source:
 <input type="text" class="inputform" name="source" placeholder="Source goes here">
