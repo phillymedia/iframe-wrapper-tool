@@ -22,6 +22,7 @@ PMN: Iframe wrapper tool
 <select id="typeSelect">
 <option label="Select one"></option>
 <option value="arcgis" selected="selected">ArcGIS map</option>
+<option value="datawrapper">Datawrapper graphic</option>
 </select>
 <form class="sizeOptions">
 <input type="radio" id="fullwidth" name="iframesize" value="fullwidth" checked="checked">
@@ -36,21 +37,30 @@ PMN: Iframe wrapper tool
 <div class="getInfo">
 <div class="instruc">Fill out all the fields below:</div>
 <form class="infoform">
-Headline:
+<div class="inputdisplay arcgis dw">Headline:
 <input type="text" class="inputform" name="headline" placeholder="This is the headline">
-<br>Chatter:
+</div>
+<div class="inputdisplay arcgis dw">Chatter:
 <textarea type="text" class="inputform" name="chatter" placeholder="Chatter goes here" rows="3"></textarea>
-<br>Legend image url <small>(Can leave blank)</small>:
+</div>
+<div class="inputdisplay arcgis">Legend image url <small>(Can leave blank)</small>:
 <input type="text" class="inputform" name="imageurl" placeholder="http://media.philly.com/images/mini_casino_legend.png">
-<br>ArcGIS map id:
+</div>
+<div class="inputdisplay arcgis">ArcGIS map id:
 <input type="text" class="inputform" name="webmap" placeholder="2c012c7bf06c4925b7bf29e1723ea1f5">
-<br>Map width:
-<input type="text" class="inputform smallinput" name="width" placeholder="725"> Map height:
+</div>
+<div class="inputdisplay dw">Datawrapper URL:
+<input type="text" class="inputform" name="url" placeholder="//datawrapper.dwcdn.net/7WhcD/1">
+</div>
+<div class="inputdisplay arcgis dw">Graphic width:
+<input type="text" class="inputform smallinput" name="width" placeholder="725"> Graphic height:
 <input type="text" class="inputform smallinput" name="height" placeholder="530">
-<br>Source:
+</div>
+<div class="inputdisplay arcgis">Source:
 <input type="text" class="inputform" name="source" placeholder="Source goes here">
-<br>Credit:
-<input type="text" class="inputform" name="credit" placeholder="Staff Graphic"><br>
+</div>
+<div class="inputdisplay arcgis">Credit:
+<input type="text" class="inputform" name="credit" placeholder="Staff Graphic"></div>
 </form>
 <button id="enterData" class="button">Generate html</button>
 </div>
