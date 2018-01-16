@@ -29,13 +29,14 @@ PMN: Iframe wrapper tool
 <label for="fullwidth">Full width</label>
 <input type="radio" id="floatleft" name="iframesize" value="floatleft">
 <label for="floatleft">Float left</label>
-<div class="floatWidth"><input id="getFloat" type="text" class="inputform smallinput" name="floatwidth" placeholder="350"></div>
+<div class="floatWidth"><input id="getFloat" type="text" class="inputform smallinput" name="floatwidth" value="350"></div>
 </form>
 </div>
 </div>
 <div class="step" id="step-1">
 <div class="getInfo">
 <div class="instruc">Fill out all the fields below:</div>
+<div>* = Can leave blank</div><br>
 <form class="infoform">
 <div class="inputdisplay arcgis dw">Headline:
 <input type="text" class="inputform" name="headline" placeholder="This is the headline">
@@ -43,8 +44,9 @@ PMN: Iframe wrapper tool
 <div class="inputdisplay arcgis dw">Chatter:
 <textarea type="text" class="inputform" name="chatter" placeholder="Chatter goes here" rows="3"></textarea>
 </div>
-<div class="inputdisplay arcgis">Legend image url <small>(Can leave blank)</small>:
-<input type="text" class="inputform" name="imageurl" placeholder="http://media.philly.com/images/mini_casino_legend.png">
+<div class="inputdisplay arcgis">*Legend image url <small>(Will default to 100% width unless specified)</small>:<br>
+<input type="text" class="inputform mediuminput" name="imageurl" placeholder="http://media.philly.com/images/mini_casino_legend.png">
+<input type="text" class="inputform smallinput" name="legendwidth" placeholder="430px">
 </div>
 <div class="inputdisplay arcgis">ArcGIS map id:
 <input type="text" class="inputform" name="webmap" placeholder="2c012c7bf06c4925b7bf29e1723ea1f5">
@@ -53,11 +55,11 @@ PMN: Iframe wrapper tool
 <input type="text" class="inputform" name="url" placeholder="//datawrapper.dwcdn.net/7WhcD/1">
 </div>
 <div class="inputdisplay arcgis dw">Graphic width:
-<input type="text" class="inputform smallinput" name="width" placeholder="725"> Graphic height:
+<input type="text" class="inputform smallinput" name="width" value="100%"> Graphic height:
 <input type="text" class="inputform smallinput" name="height" placeholder="530">
 </div>
 <div class="inputdisplay arcgis">Source:
-<input type="text" class="inputform" name="source" placeholder="Source goes here">
+<input type="text" class="inputform" name="source" placeholder="SOURCE: Source goes here">
 </div>
 <div class="inputdisplay arcgis dw">Credit:
 <input type="text" class="inputform" name="credit" placeholder="Staff Graphic"></div>
