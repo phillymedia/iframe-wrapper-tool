@@ -37,6 +37,9 @@ PMN: Iframe wrapper tool
 <div class="pymnote">
 <strong>If you are embedding a responsive iframe, be sure to remove the borders, extra padding and margins from the iframe css file so that they dont appear twice.</strong>
 </div>
+<div class="datawrappernote">
+<strong>When embedding a datawrapper chart, make sure to put the source information in datawrapper and leave the Source field blank.</strong>
+</div>
 </div>
 <div class="step" id="step-1">
 <div class="getInfo">
@@ -70,7 +73,7 @@ PMN: Iframe wrapper tool
 <input type="text" class="inputform smallinput" name="width" value="100%"><span class="optional">*</span>Graphic height:
 <input type="text" class="inputform smallinput" name="height" placeholder="530">
 </div>
-<div class="inputdisplay arcgis pymframe dw static"><span class="optional">*</span>Source:
+<div class="inputdisplay arcgis pymframe dw static"><span class="optional">*</span><span class="optionaldw">*</span>Source:
 <input type="text" class="inputform" name="source" placeholder="SOURCE: Source goes here">
 </div>
 <div class="inputdisplay arcgis dw pymframe dw static"><span class="optional">*</span>Credit:
